@@ -19,6 +19,9 @@
 		B58EF87218002D7B00277DD5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58EF87018002D7B00277DD5 /* MainStoryboard.storyboard */; };
 		B58EF87518002D7B00277DD5 /* YFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EF87418002D7B00277DD5 /* YFViewController.m */; };
 		B58EF87D18002F6600277DD5 /* UINavigationBar+ChangeHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EF87C18002F6600277DD5 /* UINavigationBar+ChangeHeight.m */; };
+		B58EF880180041DA00277DD5 /* YFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EF87F180041D900277DD5 /* YFSecondViewController.m */; };
+		B58EF88218004D3800277DD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58EF88118004D3800277DD5 /* QuartzCore.framework */; };
+		B58EF885180050D600277DD5 /* YFColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EF884180050D600277DD5 /* YFColorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,12 @@
 		B58EF87418002D7B00277DD5 /* YFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFViewController.m; sourceTree = "<group>"; };
 		B58EF87B18002F6600277DD5 /* UINavigationBar+ChangeHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ChangeHeight.h"; sourceTree = "<group>"; };
 		B58EF87C18002F6600277DD5 /* UINavigationBar+ChangeHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ChangeHeight.m"; sourceTree = "<group>"; };
+		B58EF87E180041D900277DD5 /* YFSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSecondViewController.h; sourceTree = "<group>"; };
+		B58EF87F180041D900277DD5 /* YFSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSecondViewController.m; sourceTree = "<group>"; };
+		B58EF88118004D3800277DD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B58EF883180050D500277DD5 /* YFColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFColorManager.h; sourceTree = "<group>"; };
+		B58EF884180050D600277DD5 /* YFColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFColorManager.m; sourceTree = "<group>"; };
+		B58EF88718019AFC00277DD5 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58EF88218004D3800277DD5 /* QuartzCore.framework in Frameworks */,
 				B58EF85918002D7B00277DD5 /* UIKit.framework in Frameworks */,
 				B58EF85B18002D7B00277DD5 /* Foundation.framework in Frameworks */,
 				B58EF85D18002D7B00277DD5 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +86,7 @@
 		B58EF85718002D7B00277DD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B58EF88118004D3800277DD5 /* QuartzCore.framework */,
 				B58EF85818002D7B00277DD5 /* UIKit.framework */,
 				B58EF85A18002D7B00277DD5 /* Foundation.framework */,
 				B58EF85C18002D7B00277DD5 /* CoreGraphics.framework */,
@@ -86,14 +97,19 @@
 		B58EF85E18002D7B00277DD5 /* NavigationCustom */ = {
 			isa = PBXGroup;
 			children = (
+				B58EF87018002D7B00277DD5 /* MainStoryboard.storyboard */,
+				B58EF85F18002D7B00277DD5 /* Supporting Files */,
 				B58EF86718002D7B00277DD5 /* YFAppDelegate.h */,
 				B58EF86818002D7B00277DD5 /* YFAppDelegate.m */,
-				B58EF87018002D7B00277DD5 /* MainStoryboard.storyboard */,
 				B58EF87318002D7B00277DD5 /* YFViewController.h */,
 				B58EF87418002D7B00277DD5 /* YFViewController.m */,
-				B58EF85F18002D7B00277DD5 /* Supporting Files */,
+				B58EF87E180041D900277DD5 /* YFSecondViewController.h */,
+				B58EF87F180041D900277DD5 /* YFSecondViewController.m */,
 				B58EF87B18002F6600277DD5 /* UINavigationBar+ChangeHeight.h */,
 				B58EF87C18002F6600277DD5 /* UINavigationBar+ChangeHeight.m */,
+				B58EF883180050D500277DD5 /* YFColorManager.h */,
+				B58EF884180050D600277DD5 /* YFColorManager.m */,
+				B58EF88718019AFC00277DD5 /* Const.h */,
 			);
 			path = NavigationCustom;
 			sourceTree = "<group>";
@@ -183,6 +199,8 @@
 				B58EF86918002D7B00277DD5 /* YFAppDelegate.m in Sources */,
 				B58EF87518002D7B00277DD5 /* YFViewController.m in Sources */,
 				B58EF87D18002F6600277DD5 /* UINavigationBar+ChangeHeight.m in Sources */,
+				B58EF880180041DA00277DD5 /* YFSecondViewController.m in Sources */,
+				B58EF885180050D600277DD5 /* YFColorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +251,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -257,7 +275,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
