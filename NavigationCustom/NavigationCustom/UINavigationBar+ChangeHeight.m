@@ -8,11 +8,21 @@
 
 #import "UINavigationBar+ChangeHeight.h"
 
-const NSInteger kBarHeight = 50;
+const NSInteger kBarHeight = 90;
 
 @implementation UINavigationBar (ChangeHeight)
 - (CGSize)sizeThatFits:(CGSize)size {
     CGSize newSize = CGSizeMake(self.frame.size.width,kBarHeight);
     return newSize;
 }
+
+- (void)didMoveToSuperview
+{
+    //iOS5 only
+    if ([self respondsToSelector:@selector(setBackgroundColor:)])
+    {
+        [self setBackgroundColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.2]];
+    }
+}
+
 @end

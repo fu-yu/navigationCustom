@@ -7,16 +7,17 @@
 //
 
 #import "YFAppDelegate.h"
+#import "YFColorManager.h"
 
 @implementation YFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-//    UIColor* color = nil;
-//    color = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.4];
-//    [[UINavigationBar appearance] setTintColor:[UIColor clearColor]];
-//    [[UINavigationBar appearance] setBackgroundColor:color];
+    [[UINavigationBar appearance] setBackgroundImage:[YFColorManager createImageFromUIColor:[UIColor colorWithRed:1.0 green:1.0  blue:1.0  alpha:0.2]] forBarMetrics:UIBarMetricsDefault];
+    
+//    UIImage *backButtonImage = [YFColorManager createImageFromUIColor:[UIColor colorWithRed:1.0 green:1.0  blue:1.0  alpha:0.2] rectSize:CGSizeMake(44,44 )];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     return YES;
 }
 							
